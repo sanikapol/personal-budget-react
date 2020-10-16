@@ -1,6 +1,10 @@
 import React from 'react';
+import ChartJS from '../ChartJS/ChartJS';
+import D3JS from '../D3JS/D3JS';
+
 
 function HomePage() {
+    
   return (
     
     <main className="container center" id = "main"> 
@@ -55,15 +59,14 @@ function HomePage() {
 
       <article className="text-box">
           <h1>D3js Chart</h1>
-          <p>
-              {/* <div id="my_d3Chart"></div> */}
-          </p>
+          <D3JS/> 
+          
       </article>
 
       <article className="text-box">
           <h1>Chart</h1>
           <p>
-              <canvas id="myChart" width="400" height="400"></canvas>
+            <ChartJS/>
           </p>
       </article>
     </div>
